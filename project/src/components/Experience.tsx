@@ -6,37 +6,37 @@ const Experience = () => {
     {
       title: "Software Engineer Intern",
       company: "Vodafone Egypt",
-      location: "Hybrid",
+      location: "Hybrid(Cairo, Egypt)",
       period: "Jul 2024 - Sep 2024",
       description: [
-        "Developed RESTful APIs using Node.js and Express.js for a customer management system",
-        "Implemented database optimization techniques that improved query performance by 40%",
-        "Collaborated with frontend team to integrate APIs and ensure seamless data flow",
-        "Participated in code reviews and followed agile development practices"
+        " Implemented a real-time server monitoring application that tracks performance metrics for 4 servers, detecting high\n" +
+        " load conditions, reducing incident response time by 40% improving system reliability.",
+        " Developed a load balancing mechanism to distribute traffic across 4 servers, achieving a 30% improvement in server\n" +
+        " efficiency."
       ]
     },
     {
-      title: "Junior Software Developer",
-      company: "University Research Lab",
-      location: "Cairo, Egypt",
-      period: "Jan 2024 - May 2024",
+      title: "Software Engineer Intern",
+      company: "Hadbrok Insurances",
+      location: "Hybrid(Cairo, Egypt)",
+      period: "Jul 2023 - Sep 2023",
       description: [
-        "Built data processing pipelines using Python and PostgreSQL",
-        "Created automated testing suites that increased code coverage to 85%",
-        "Developed microservices architecture for research data management",
-        "Mentored junior students in backend development best practices"
+        " Developed a tailored database schema to drive the company’s website operations, which made data retrieval faster\n" +
+        " by 154% than before.",
+        "Revamped most of the API routes and migrated to Django instead of Laravel, leveraging RESTful principles, and\n" +
+        " implementing techniques such as pagi- nation, caching, and token-based authentication, leading to a 30%\n" +
+        " improvement in response time."
       ]
     },
     {
-      title: "Freelance Backend Developer",
-      company: "Self-Employed",
-      location: "Remote",
+      title: "Software Engineer Intern",
+      company: "First Abu Dhabi Bank",
+      location: "Cairo, Egypt",
       period: "Sep 2023 - Dec 2023",
       description: [
-        "Delivered custom backend solutions for 3 small businesses",
-        "Implemented secure authentication and authorization systems",
-        "Optimized database schemas and improved application performance",
-        "Provided technical consultation on system architecture decisions"
+        "Explored Java EE applications, Java Persistence API (JPA) for data management, and JDBC for interacting with\n" +
+        " databases.",
+        " Created an application to manage employee absences by scanning a QR code using Spring Boot and PostgreSQL."
       ]
     }
   ];
