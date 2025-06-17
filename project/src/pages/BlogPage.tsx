@@ -17,7 +17,6 @@ const BlogPage = () => {
       date: "2024-01-15",
       author: "Ahmed Haitham",
       likes: 42,
-      comments: 8,
       readTime: "5 min read",
       category: "Backend",
       tags: ["Node.js", "API", "Backend", "Express", "Performance"],
@@ -31,7 +30,6 @@ const BlogPage = () => {
       date: "2024-01-08",
       author: "Ahmed Haitham",
       likes: 38,
-      comments: 12,
       readTime: "7 min read",
       category: "Database",
       tags: ["Database", "PostgreSQL", "Optimization", "Performance", "SQL"],
@@ -45,7 +43,6 @@ const BlogPage = () => {
       date: "2024-01-01",
       author: "Ahmed Haitham",
       likes: 56,
-      comments: 15,
       readTime: "8 min read",
       category: "Security",
       tags: ["JWT", "Authentication", "Security", "Backend", "Authorization"],
@@ -59,7 +56,6 @@ const BlogPage = () => {
       date: "2023-12-28",
       author: "Ahmed Haitham",
       likes: 73,
-      comments: 22,
       readTime: "12 min read",
       category: "Architecture",
       tags: ["Microservices", "Architecture", "Scalability", "Docker", "Kubernetes"],
@@ -73,7 +69,6 @@ const BlogPage = () => {
       date: "2023-12-20",
       author: "Ahmed Haitham",
       likes: 45,
-      comments: 9,
       readTime: "6 min read",
       category: "Performance",
       tags: ["Redis", "Caching", "Performance", "Backend", "Optimization"],
@@ -87,7 +82,6 @@ const BlogPage = () => {
       date: "2023-12-15",
       author: "Ahmed Haitham",
       likes: 61,
-      comments: 18,
       readTime: "10 min read",
       category: "DevOps",
       tags: ["Docker", "Containerization", "DevOps", "Deployment", "Backend"],
@@ -281,11 +275,6 @@ const BlogPage = () => {
                         {post.likes + (likedPosts.includes(post.id) ? 1 : 0)}
                       </span>
                     </motion.button>
-
-                    <div className="flex items-center space-x-1 text-gray-400">
-                      <MessageCircle size={16} />
-                      <span className="text-sm">{post.comments}</span>
-                    </div>
 
                     <motion.button
                       whileHover={{ scale: 1.1 }}

@@ -14,7 +14,6 @@ const Blog = () => {
       date: "2024-01-15",
       author: "Ahmed Haitham",
       likes: 42,
-      comments: 8,
       readTime: "5 min read",
       tags: ["Node.js", "API", "Backend", "Express"]
     },
@@ -25,7 +24,6 @@ const Blog = () => {
       date: "2024-01-08",
       author: "Ahmed Haitham",
       likes: 38,
-      comments: 12,
       readTime: "7 min read",
       tags: ["Database", "PostgreSQL", "Optimization", "Performance"]
     },
@@ -36,7 +34,6 @@ const Blog = () => {
       date: "2024-01-01",
       author: "Ahmed Haitham",
       likes: 56,
-      comments: 15,
       readTime: "8 min read",
       tags: ["JWT", "Authentication", "Security", "Backend"]
     }
@@ -149,11 +146,6 @@ const Blog = () => {
                         {post.likes + (likedPosts.includes(post.id) ? 1 : 0)}
                       </span>
                     </motion.button>
-
-                    <div className="flex items-center space-x-1 text-gray-400">
-                      <MessageCircle size={16} />
-                      <span className="text-sm">{post.comments}</span>
-                    </div>
 
                     <motion.button
                       whileHover={{ scale: 1.1 }}
