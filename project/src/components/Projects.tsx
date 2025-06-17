@@ -1,52 +1,45 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Code, Database, Server } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce API Platform",
-      description: "A comprehensive RESTful API for an e-commerce platform with user authentication, product management, order processing, and payment integration.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "JWT", "Stripe API", "Docker"],
+      title: "CodeMedics Clinic Platform",
+      description: "A monolith clinic platform with user authentication, order processing, and payment integration.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "JWT", "Stripe API", "Docker","Redis","Swagger", "React"],
       features: [
         "User authentication and authorization",
-        "Product catalog management",
+        "Microservices and clean architecture",
         "Shopping cart and order processing",
         "Payment gateway integration",
-        "Admin dashboard API"
+        "Real-time chatting and video calls via WebSocket."
       ],
-      github: "https://github.com",
-      demo: "https://demo.example.com",
+      github: "https://github.com/advanced-computer-lab-2023/CodeMedics-Clinic",
       icon: Server
     },
     {
-      title: "Real-time Chat Application Backend",
-      description: "Scalable backend for a real-time messaging application supporting multiple chat rooms, file sharing, and user presence indicators.",
-      technologies: ["Python", "Django", "WebSockets", "Redis", "PostgreSQL", "Celery"],
+      title: "Podzilla",
+      description: "Scalable distributed system for warehouse management features ERP for analytics and order tracking.",
+      technologies: ["Java", "Spring Boot", "RabbitMQ", "Redis", "PostgreSQL", "MongoDB", "Docker", "Kubernetes", "JPA", "Nginx", "Grafana"],
       features: [
-        "Real-time messaging with WebSockets",
-        "File upload and sharing",
-        "User presence and typing indicators",
-        "Message history and search",
-        "Push notifications"
+        "User authentication and authorization",
+        " API-Gateway for microservices",
+        "Utility library to manage communication between services",
+        "Distributed database and caching with Redis",
+        "Real-time analytics and monitoring with Grafana",
       ],
-      github: "https://github.com",
-      demo: "https://demo.example.com",
+      github: "https://github.com/Podzilla",
       icon: Database
     },
     {
-      title: "Task Management API",
-      description: "A robust task management system with team collaboration features, project tracking, and automated reporting capabilities.",
-      technologies: ["Java", "Spring Boot", "MySQL", "Spring Security", "JPA", "Maven"],
+      title: "Tomasulo Simulator",
+      description: "Simulator for dynamic instruction scheduling in microprocessors.",
+      technologies: ["Java", "Swing"],
       features: [
-        "Project and task management",
-        "Team collaboration tools",
-        "Automated progress reporting",
-        "Role-based access control",
-        "RESTful API design"
+        "Enabling out-of-order execution",
+        "Efficient utilization of multiple execution unit",
       ],
-      github: "https://github.com",
-      demo: "https://demo.example.com",
+      github: "https://github.com/xDido/Tomasulo-Simulator",
       icon: Code
     }
   ];
@@ -114,24 +107,14 @@ const Projects = () => {
 
                 <div className="flex space-x-4">
                   <motion.a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    className="flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors duration-200"
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{scale: 1.0}}
+                      className="flex items-center px-4 py-2 bg-white hover:bg-gray-100 rounded-lg transition-colors duration-200"
                   >
-                    <Github size={16} className="mr-2" />
-                    <span className="text-sm">Code</span>
-                  </motion.a>
-                  <motion.a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg transition-all duration-200"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    <span className="text-sm">Demo</span>
+                    <Github size={16} className="mr-2 text-gray-700"/>
+                    <span className="text-sm text-gray-700">Code</span>
                   </motion.a>
                 </div>
               </div>

@@ -5,9 +5,7 @@ import Technologies from '../components/Technologies';
 import Projects from '../components/Projects';
 import Education from '../components/Education';
 import Resume from '../components/Resume';
-import Blog from '../components/Blog';
 import Contact from '../components/Contact';
-
 const Home = () => {
   return (
     <>
@@ -18,7 +16,6 @@ const Home = () => {
       <Projects />
       <Education />
       <Resume />
-      <Blog />
       <Contact />
     </>
   );

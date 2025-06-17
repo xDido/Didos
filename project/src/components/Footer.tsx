@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -32,7 +31,7 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['About', 'Experience', 'Projects', 'Education', 'Blog', 'Contact'].map((link) => (
+              {['About', 'Experience', 'Projects', 'Education', 'Contact'].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -55,7 +54,7 @@ const Footer = () => {
             <div className="space-y-2 mb-4">
               <p className="text-gray-300">Cairo, Egypt</p>
               <a
-                href="mailto:ahmed.haitham@example.com"
+                href="mailto:adhaithaam@gmail.com"
                 className="text-gray-300 hover:text-purple-400 transition-colors duration-200 block"
               >
                 ahmed.haitham@example.com
@@ -64,7 +63,7 @@ const Footer = () => {
             
             <div className="flex space-x-4">
               <motion.a
-                href="https://github.com"
+                href="https://github.com/xDido"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -73,7 +72,7 @@ const Footer = () => {
                 <Github size={20} className="text-purple-400" />
               </motion.a>
               <motion.a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/adhaitham"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -82,7 +81,7 @@ const Footer = () => {
                 <Linkedin size={20} className="text-purple-400" />
               </motion.a>
               <motion.a
-                href="mailto:ahmed.haitham@example.com"
+                href="mailto:adhaithaam@gmail.com"
                 whileHover={{ scale: 1.1 }}
                 className="p-2 bg-slate-800/50 rounded-lg border border-purple-500/30 hover:border-purple-400 transition-all duration-300"
               >

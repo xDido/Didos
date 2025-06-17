@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Database, Server, Cloud, Shield, Zap } from 'lucide-react';
 
@@ -7,7 +6,7 @@ const Technologies = () => {
     {
       icon: Code,
       title: "Programming Languages",
-      technologies: ["Python", "JavaScript", "TypeScript", "Java", "C++", "Go"]
+      technologies: ["Java", "Python", "Javascript"]
     },
     {
       icon: Server,
@@ -17,12 +16,12 @@ const Technologies = () => {
     {
       icon: Database,
       title: "Databases",
-      technologies: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "SQLite", "Elasticsearch"]
+      technologies: ["PostgreSQL", "MongoDB", "Redis"]
     },
     {
       icon: Cloud,
       title: "Cloud & DevOps",
-      technologies: ["AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Terraform"]
+      technologies: ["AWS", "Docker", "Kubernetes","GitHub Actions"]
     },
     {
       icon: Shield,
@@ -32,7 +31,7 @@ const Technologies = () => {
     {
       icon: Zap,
       title: "Tools & Others",
-      technologies: ["Git", "Postman", "Swagger", "Linux", "Nginx", "GraphQL"]
+      technologies: ["Git", "Postman", "Swagger", "Linux", "Nginx", "Maven"]
     }
   ];
 

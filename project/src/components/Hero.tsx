@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ChevronDown, Rocket } from 'lucide-react';
 
@@ -73,7 +72,7 @@ const Hero = () => {
           className="flex justify-center space-x-6 mb-12"
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/xDido"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, rotate: 5 }}
@@ -82,7 +81,7 @@ const Hero = () => {
             <Github size={24} className="text-purple-400" />
           </motion.a>
           <motion.a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/adhaitham"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, rotate: -5 }}
@@ -91,7 +90,7 @@ const Hero = () => {
             <Linkedin size={24} className="text-purple-400" />
           </motion.a>
           <motion.a
-            href="mailto:ahmed@example.com"
+            href="mailto:adhaithaam@gmail.com"
             whileHover={{ scale: 1.2, rotate: 5 }}
             className="p-3 bg-gray-800/50 dark:bg-black/50 rounded-full border border-purple-500/30 hover:border-purple-400 transition-all duration-300"
           >

@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Code, Target, Telescope } from 'lucide-react';
+import { Heart, Code, Telescope } from 'lucide-react';
 
 const About = () => {
   return (
@@ -13,7 +12,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            🌟 About My Cosmic Journey
+            About My Cosmic Journey
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
         </motion.div>

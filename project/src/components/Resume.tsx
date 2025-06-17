@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Download, Eye, FileText, X, ExternalLink } from 'lucide-react';
+import {useState} from "react";
 
 const Resume = () => {
   const [showPreview, setShowPreview] = useState(false);
@@ -15,7 +15,7 @@ const Resume = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            📄 Cosmic Resume
+             Cosmic Resume
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
         </motion.div>

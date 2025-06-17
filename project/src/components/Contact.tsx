@@ -1,42 +1,22 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin} from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const contactInfo = [
     {
       icon: Mail,
       title: "Email",
-      value: "ahmed.haitham@example.com",
-      link: "mailto:ahmed.haitham@example.com"
+      value: "adhaithaam@gmail.com",
+      link: "mailto:adhaithaam@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+20 123 456 7890",
-      link: "tel:+201234567890"
+      value: "+20 123 450 0211",
+      link: "tel:+201234500211"
     },
     {
       icon: MapPin,
@@ -50,25 +30,19 @@ const Contact = () => {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/xDido",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://linkedin.com/in/adhaitham",
       color: "hover:text-blue-400"
-    },
-    {
-      icon: Twitter,
-      name: "Twitter",
-      url: "https://twitter.com",
-      color: "hover:text-sky-400"
     }
   ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-2">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -147,93 +121,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 rounded-xl p-8 border border-purple-500/20"
-          >
-            <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg focus:border-purple-400 focus:outline-none transition-colors text-white"
-                    placeholder="Your Name"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg focus:border-purple-400 focus:outline-none transition-colors text-white"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg focus:border-purple-400 focus:outline-none transition-colors text-white"
-                  placeholder="What's this about?"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-gray-600 rounded-lg focus:border-purple-400 focus:outline-none transition-colors text-white resize-none"
-                  placeholder="Tell me about your project or just say hello..."
-                />
-              </div>
-
-              <motion.button
-                type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg transition-all duration-200 font-medium"
-              >
-                <Send size={20} className="mr-2" />
-                Send Message
-              </motion.button>
-            </form>
-          </motion.div>
         </div>
       </div>
     </section>

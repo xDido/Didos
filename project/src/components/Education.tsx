@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Award, BookOpen, Calendar } from 'lucide-react';
 
@@ -6,13 +5,12 @@ const Education = () => {
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      institution: "Cairo University",
+      institution: "German University in Cairo",
       location: "Cairo, Egypt",
-      period: "2020 - 2024",
-      gpa: "3.8/4.0",
+      period: "2020 - 2025",
+      gpa: "3.1/4.0",
       description: "Specialized in software engineering with focus on backend development, algorithms, and database systems.",
       achievements: [
-        "Dean's List for 6 consecutive semesters",
         "Outstanding Student in Software Engineering",
         "Led final year project on distributed systems"
       ],
@@ -29,20 +27,14 @@ const Education = () => {
 
   const certifications = [
     {
-      title: "AWS Certified Developer - Associate",
-      issuer: "Amazon Web Services",
-      date: "2024",
+      title: "Introduction to Java Mobile development",
+      issuer: "ITI",
+      date: "2022",
       icon: Award
     },
     {
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
-      date: "2023",
-      icon: Award
-    },
-    {
-      title: "Docker Certified Associate",
-      issuer: "Docker Inc.",
+      title: "Introduction to Backend Development",
+      issuer: "Meta",
       date: "2023",
       icon: Award
     }

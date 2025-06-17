@@ -1,14 +1,13 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Backend Developer Intern",
-      company: "TechStart Solutions",
-      location: "Remote",
-      period: "Jun 2024 - Aug 2024",
+      title: "Software Engineer Intern",
+      company: "Vodafone Egypt",
+      location: "Hybrid",
+      period: "Jul 2024 - Sep 2024",
       description: [
         "Developed RESTful APIs using Node.js and Express.js for a customer management system",
         "Implemented database optimization techniques that improved query performance by 40%",
