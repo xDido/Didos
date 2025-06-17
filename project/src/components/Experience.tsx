@@ -32,7 +32,7 @@ const Experience = () => {
       title: "Software Engineer Intern",
       company: "First Abu Dhabi Bank",
       location: "Cairo, Egypt",
-      period: "Sep 2023 - Dec 2023",
+      period: "Sep 2022 - Dec 2022",
       description: [
         "Explored Java EE applications, Java Persistence API (JPA) for data management, and JDBC for interacting with\n" +
         " databases.",
